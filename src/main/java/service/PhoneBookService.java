@@ -1,17 +1,21 @@
 package service;
 
 import dao.PhoneBookDao;
-import ui.PhoneBookDto;
+import view.PhoneBookDto;
 
 public class PhoneBookService{
+    PhoneBookDao pbDao=new PhoneBookDao();
 
     public void insertPhoneBook(PhoneBookDto phoneBookDto){
 
         PhoneBookEntity pbEntity=new PhoneBookEntity();
         pbEntity.setPhonebookName(phoneBookDto.getPhonebookName());
+        pbEntity.setContactList(phoneBookDto.getcontactList());
 
-        PhoneBookDao pbDao=new PhoneBookDao();
+
         pbDao.insertPhoneBook(pbEntity);
     }
+
+
 
 }

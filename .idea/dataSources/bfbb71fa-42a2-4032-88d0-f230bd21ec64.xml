@@ -16,10 +16,5 @@
     <schema id="10" parent="1" name="SYSIBM"/>
     <schema id="11" parent="1" name="SYSPROC"/>
     <schema id="12" parent="1" name="SYSSTAT"/>
-    <table id="13" parent="2" name="PHONEBOOK"/>
-    <column id="14" parent="13" name="PHONEBOOKNAME">
-      <Position>1</Position>
-      <DataType>VARCHAR(255)|12</DataType>
-    </column>
   </database-model>
 </dataSource>
